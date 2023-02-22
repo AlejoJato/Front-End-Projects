@@ -1,18 +1,16 @@
 {
-  "name": "hola_mundo",
+  "name": "ejercicio-09",
   "version": "1.0.0",
-  "description": "Este es el primer proyecto Javascript con Node del curso de Open Bootcamp",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "saludar": "node saludo.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
   },
-  "keywords": [
-    "primero",
-    "javascript",
-    "node"
-  ],
-  "author": "Alejo Jato",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^3.8.2"
+  }
 }
