@@ -1,21 +1,9 @@
-const winston = require("winston");
-
-const logger = winston.createLogger({
-    level: "error",
-    format: winston.format.json(),
-    defaultMeta: { service: "user-service" },
-    transports: [
-        new winston.transports.File({ filename: "errores.log", level: "error" }),
-    ],
-});
+import { suma, multiplica } from "./controller.js"
+import chalk from "chalk"
 
 
-function devuelveError() {
-    throw new Error("error de funcion");
-}
+const sum = suma(1, 2)
+const mul = multiplica(4, 5)
 
-try {
-    devuelveError();
-} catch (e) {
-    logger.error(e.toString());
-}
+console.log(sum)
+console.log(chalk.green(mul))
