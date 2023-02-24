@@ -1,9 +1,19 @@
-import { suma, multiplica } from "./controller.js"
-import chalk from "chalk"
+let nombre = "Alejo"
 
+let apellido = "Jato"
 
-const sum = suma(1, 2)
-const mul = multiplica(4, 5)
+let estudiante = `${nombre} ${apellido}`
 
-console.log(sum)
-console.log(chalk.green(mul))
+let estudianteMayus = estudiante.toUpperCase()
+
+let estudianteMinus = estudiante.toLowerCase()
+
+let letras = estudiante.length
+
+let primera_letra = nombre.charAt(0)
+
+let ultima_letra = apellido[3]
+
+let sin_espacios = estudiante.replace(" ", "")
+
+let bool = estudiante.includes(`${nombre}`)
