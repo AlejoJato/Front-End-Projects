@@ -1,9 +1,11 @@
-import { suma, multiplica } from "./controller.js"
-import chalk from "chalk"
+const boton = document.querySelector(".btn")
 
+$(document).ready(() => {
+    boton.addEventListener("click", () => {
+        alert("Click en el boton")
+    })
 
-const sum = suma(1, 2)
-const mul = multiplica(4, 5)
-
-console.log(sum)
-console.log(chalk.green(mul))
+    $(".btn").click(() => {
+        console.log("Hola, estoy utilizando jQuery")
+    })
+})
