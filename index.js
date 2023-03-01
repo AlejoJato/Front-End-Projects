@@ -1,9 +1,14 @@
-import { suma, multiplica } from "./controller.js"
-import chalk from "chalk"
+let nombre = "Alejo"
 
+let apellido = "Jato"
 
-const sum = suma(1, 2)
-const mul = multiplica(4, 5)
+let persona = {
+    nombre,
+    apellido
+}
 
-console.log(sum)
-console.log(chalk.green(mul))
+sessionStorage.setItem("persona", JSON.stringify(persona))
+
+localStorage.setItem("persona", JSON.stringify(persona))
+
+document.cookie = `persona=${persona};expires=` + new Date(2023, 2, 1, 22, 00, 00)
